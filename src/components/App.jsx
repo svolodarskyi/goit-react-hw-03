@@ -27,8 +27,8 @@ const App = () => {
       setFilteredContacts([]);
       return;
     }
-    setFilteredContacts(prev =>
-      prev.filter(item =>
+    setFilteredContacts(
+      contacts.filter(item =>
         item.name.toLowerCase().includes(searchVal.toLowerCase())
       )
     );
